@@ -479,8 +479,8 @@
 /************************content*****************************/
 .content {
   position: relative;
+  overflow: hidden;
   width: 1000px;
-  height: 450px;
   margin: 0 auto;
 }
 
@@ -488,7 +488,7 @@
   float: left;
   position: relative;
   width: 390px;
-  height: 450px;
+  height: 468px;
 }
 
 .content .left .middle {
