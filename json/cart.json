@@ -1,0 +1,33 @@
+{
+	"goods_id": 10001,
+	"goods_name": "【新品】16款Banana Umbrella蕉下小黑伞槐黄/月紫双层防晒女太阳遮阳伞-五折款-月紫",
+	"goods_price":269.00,
+	"goods_pic_small": "img/san1.jpg",
+	"goods_pic_large": "img/san-m1.jpg",
+	"color": {
+		"1000101": {
+			"id": "1000101",
+			"type": "葵黄",
+			"sale_price": "269.00",
+			"stock": 12
+		},
+		"1000102": {
+			"id": "1000102",
+			"type": "绿色",
+			"sale_price": "279.00",
+			"stock": 74
+		},
+		"1000103": {
+			"id": "1000103",
+			"type": "墨绿",
+			"sale_price": "389.00",
+			"stock": 307
+		},
+		"1000104": {
+			"id": "1000104",
+			"type": "月紫",
+			"sale_price": "478.00",
+			"stock": 39
+		}
+	}
+}

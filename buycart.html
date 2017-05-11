@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/buycart.css">
+	<link rel="stylesheet" type="text/css" href="css/commen.css">
+</head>
+<body>
+<div class="header">
+		<div class="header1">
+			<div class="headerleft">
+				<a href="javascript:;" class="zone"></a>
+				<a href="javascript:;" class="wx">
+					<span>
+						<img src="img/img124.jpg">
+					</span>
+					
+				</a>
+				<a target="_blank" href="http://weibo.com/tianhongcn" class="wb"></a>
+			</div>
+			<div class="headerright">
+				<ul>
+					<li>您好，欢迎来到虹领巾</li>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="">注册</a></li>
+					<li><a href="">我的订单</a></li>
+					<li><a href="">我的虹领巾</a></li>
+					<li class="ls"><a href=""  class="client">客户服务<i class="arrow"></i></a>
+						<ul class="sevice">
+							<li><a href="">大客户服务</a></li>
+							<li><a href="">线上客服</a></li>
+							<li><a href="">服务热线</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="wr">
+		<div class="logo">
+			<a href="index.html">
+				<img src="img/img133.png">
+			</a>
+		</div>
+		<div class="right">
+			<ul>
+				<li>
+					1、我的购物车
+					<span>
+						
+					</span>
+				</li>
+				<li>
+					2、填写核对订单信息
+					<span></span>
+				</li>
+				<li>
+					3、成功提交订单
+				</li>
+			</ul>
+		</div>
+	</div>
+<!--*************************购物车**************************-->
+	<div class="content">
+		<div class="cartContent">
+			<div class="top">
+				<ul>
+					<li>
+						运费说明
+					</li>
+					<li>自营商品满额可享受运费优惠，深圳市自提实付满59元免运费；商家自配送商品以商家运费规则为准。详见 配送运费标准。</li>
+				</ul>
+			</div>
+			<!-- 标题栏 -->
+			<div class="info">
+				<ul>
+					<li class="checked">
+						<input type="checkbox" name="" class="selectAll">全选
+					</li>
+					<li class="product">商品</li>
+					<li class="intro">商品信息</li>
+					<li class="price">单价</li>
+					<li class="amount">数量</li>
+					<li class="total">金额</li>
+					<li class="cz">操作</li>
+				</ul>
+			</div>
+			<!-- 商品区 -->
+			<div class="market">
+				
+			</div>	
+			<!-- 结算区 -->
+			<div  class="cal">
+				<div class="left">
+					<div class="checked select">
+						<input type="checkbox" name="" class="selectAll">
+						全选
+					</div>
+					<div class="del">
+							<a href="javascript:;" class="delete">
+						删除
+						</a>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li>
+							已选择<span class="Num">0</span>件商品
+						</li>
+						<li>总价(不含运费):￥<span class="price">0.00</span></li>
+						<li class="finish">
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--*************************template**************************-->
+<script type="text/html" id="cart">
+	{{each cart as v k}}
+		<div class="market-content" data-id="{{k}}">
+					<ul class="icon-item">
+						<li class="cheked">
+							<input type="checkbox" name="">
+						</li>
+						<li class="product">
+							<dl>
+								<dt>
+									<img src="{{data.goods_pic_small}}">
+								</dt>
+								<dd>
+									{{data.goods_name}}
+								</dd>
+							</dl>
+						</li>
+						<li class="intro">
+							<span>颜色分类:</span>
+							<span>{{data.color[k].type}}</span>
+						</li>
+						<li class="price">
+							<span>￥</span>
+							<span class="goods-price">{{data.color[k].sale_price}}</span>
+						</li>
+						<li class="amount" data-stock="{{data.color[k].stock}}">
+							<button class="decrease">-</button>
+							<input type="text" name="" value="{{v.amount}}" class="amount-input">
+							<button class="increase">+</button>
+						</li>
+						<li class="total">
+							<span>￥</span>
+							<span class="t">{{data.color[k].sale_price * v.amount}}</span>
+						</li>
+						<li class="cz">
+							<div class="cz1">
+								<a href="javascript:;">移入收藏夹</a>
+							</div>
+							<div class="cz2">
+								<a href="javascript:;" class="delete">删除</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+	{{/each}}
+</script>
+	<script data-main="js/js/buycart.js" type="text/javascript" src="require.js"></script>
+</body>
+</html>

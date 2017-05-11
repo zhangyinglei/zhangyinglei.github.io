@@ -1,0 +1,377 @@
+.header {
+  width: 100%;
+  height: 25px;
+  background-color: #F2F2F2;
+}
+
+.header .header1 {
+  width: 1000px;
+  height: 25px;
+  margin: 0 auto;
+}
+
+.header .header1 .headerleft {
+  float: left;
+  width: 539px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.header .header1 .headerleft a {
+  float: left;
+  margin: 4px 12px 0 0;
+  width: 16px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  background: url(../img/bg.png) no-repeat;
+}
+
+.header .header1 .headerleft .zone {
+  background-position: 0 -104px;
+}
+
+.header .header1 .headerleft .wb {
+  background-position: -39px -104px;
+}
+
+.header .header1 .headerleft .wx {
+  background-position: -19px -104px;
+  position: relative;
+}
+
+.header .header1 .headerleft .wx span {
+  position: absolute;
+  top: 22px;
+  left: -28px;
+  display: none;
+  z-index: 2;
+}
+
+.header .header1 .headerleft .wx:hover span {
+  display: block;
+}
+
+.header .header1 .headerright {
+  float: left;
+  width: 461px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.header .header1 .headerright ul li {
+  float: left;
+  padding: 0 10px;
+  color: #666;
+}
+
+.header .header1 .headerright ul li:hover a {
+  color: #e74d4d;
+}
+
+.header .header1 .headerright ul li a {
+  color: #666;
+}
+
+.header .header1 .headerright ul .ls:hover {
+  background-color: white;
+  box-shadow: 0 -5px 15px #ccc;
+}
+
+.header .header1 .headerright ul .ls:hover a {
+  color: #666;
+}
+
+.header .header1 .headerright .client {
+  padding-right: 0;
+  position: relative;
+}
+
+.header .header1 .headerright .arrow {
+  position: absolute;
+  top: 4px;
+  left: 53px;
+  width: 9px;
+  height: 7px;
+  background: url(../img/bg.png) no-repeat;
+  background-position: -141px -308px;
+}
+
+.header .header1 .headerright .ls {
+  width: 65px;
+  text-align: center;
+  position: relative;
+}
+
+.header .header1 .headerright .ls:hover .sevice {
+  display: block;
+}
+
+.header .header1 .headerright .ls:hover .arrow {
+  background-position: -141px -315px;
+}
+
+.header .header1 .headerright .sevice {
+  width: 85px;
+  background-color: white;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  display: none;
+  z-index: 2;
+}
+
+.header .header1 .headerright .sevice a {
+  padding-left: 3px;
+}
+
+.header .header1 .headerright .sevice li:hover a {
+  color: #e74d4d;
+}
+
+/************************wr*********************************/
+.wr {
+  width: 1000px;
+  height: 45px;
+  margin: 30px auto;
+}
+
+/************************user*********************************/
+.user {
+  width: 1000px;
+  height: 35px;
+  margin: 0 auto;
+  background: url(../img/line1.gif) repeat-x 0 bottom;
+}
+
+.user li {
+  float: left;
+  color: #D82F2A;
+  padding: 0 40px;
+  line-height: 33px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid #ccc;
+  border-bottom-color: #fff;
+}
+
+/************************rigester*********************************/
+.register {
+  width: 1000px;
+  height: 560px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.register .left {
+  float: left;
+  margin: 25px 0 30px 30px;
+  padding-right: 10px;
+  width: 640px;
+  border-right: 1px solid #ccc;
+}
+
+.register .left label {
+  float: left;
+  width: 105px;
+  padding-top: 5px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.register .left label strong {
+  color: #FF0103;
+  margin-right: 3px;
+}
+
+.register .left .item {
+  width: 100%;
+  float: left;
+}
+
+.register .left .f1 {
+  width: 260px;
+  float: left;
+  border: 1px solid #ccc;
+  margin-left: 2px;
+  margin-bottom: 30px;
+}
+
+.register .left .f1 input {
+  width: 230px;
+  float: left;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.register .left .f1 span {
+  float: left;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: url(../img/login_btn.gif) no-repeat -114px -25px;
+}
+
+.register .left .f2 {
+  display: none;
+  width: 230px;
+  float: left;
+  background-color: #f5f5f7;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+.register .left .f1.f12 {
+  border: none;
+}
+
+.register .left .f1.f12 input {
+  width: 110px;
+  border: 1px solid #ccc;
+}
+
+.register .left .f1.f12 span {
+  width: 110px;
+  margin-left: 10px;
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 0;
+  letter-spacing: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.register .left .f1.f13 {
+  border: none;
+}
+
+.register .left .f1.f13 input {
+  width: 110px;
+  border: 1px solid #ccc;
+}
+
+.register .left .f1.f13 span {
+  width: 110px;
+  margin-left: 10px;
+  background: #f5f5f7;
+  padding: 5px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.register .left .f1.f10 span {
+  background-position: -145px -25px;
+}
+
+.register .left .f1.f14 {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.register .left .f1.f14 select {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.register .left .ty {
+  float: left;
+  width: 100%;
+  color: #666;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 89px;
+}
+
+.register .left .ty a {
+  color: blue;
+}
+
+.register .left .btn {
+  float: left;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  background-color: red;
+  margin-top: 40px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.register .right {
+  float: left;
+  margin: 24px;
+  width: 246px;
+}
+
+.register .right .top {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register .right .top p {
+  margin-bottom: 12px;
+  color: #888;
+}
+
+.register .right .top button {
+  width: 134px;
+  height: 33px;
+  color: red;
+  text-align: center;
+  outline: none;
+}
+
+.footer {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.footer .f2 {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+
+.footer .f2 p {
+  line-height: 20px;
+  color: #666;
+}
+
+.footer .f3 {
+  width: 100%;
+  height: 48px;
+  text-align: center;
+}
+
+.footer .f3 .f31 {
+  width: 576px;
+  height: 48px;
+  margin: 10px auto 0;
+}
+
+.footer .f3 .f31 img:nth-child(2) {
+  margin-top: 5px;
+}
+
+.footer .f3 .f31 img:nth-child(3) {
+  margin-top: 5px;
+}
+
+.footer .f3 .f31 img:nth-child(4) {
+  margin-top: 5px;
+}
+
+.footer .f3 .f31 img {
+  float: left;
+  margin-right: 20px;
+  vertical-align: middle;
+}

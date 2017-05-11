@@ -1,0 +1,278 @@
+$hoverColor:#e74d4d;
+.header {
+	width: 100%;
+	height: 25px;
+	background-color: #F2F2F2;
+	.header1 {
+	width: 1000px;
+	height: 25px;
+	margin: 0 auto;
+		.headerleft {
+			float: left;
+			width: 539px;
+			height: 25px;
+			line-height: 25px;
+				a{
+					float: left;
+					margin: 4px 12px 0 0;
+					width: 16px;
+					height: 18px;
+					text-align: center;
+					line-height: 18px;
+					background:url(../img/bg.png) no-repeat;
+				}
+				.zone {
+						background-position: 0 -104px;
+				}
+				.wb {
+						background-position: -39px -104px;
+				}
+				.wx {
+						background-position: -19px -104px;
+						position: relative;
+						span{
+							position: absolute;
+							top: 22px;
+							left: -28px;
+							display: none;
+							z-index: 2;
+						}
+						&:hover{
+							span{
+								display: block;
+							}
+						}						
+					}
+			}
+
+			.headerright {
+					float: left;
+					width: 461px;
+					height: 25px;
+					line-height: 25px;
+					ul{
+						li{
+						float: left;
+						padding: 0 10px;
+						color: #666;
+						&:hover{
+							a{
+								color:$hoverColor;
+							}
+						}
+							a{
+								color: #666;
+							}
+						}
+
+						.ls{
+							&:hover{
+								background-color: white;
+								box-shadow: 0 -5px 15px #ccc;
+							}
+							&:hover{
+								a{
+									color: #666;
+								}
+							}
+						}
+					}
+					
+					.client {
+							padding-right: 0;
+							position: relative;
+						}
+					.arrow{
+						position: absolute;
+						top: 4px;
+						left: 53px;
+						width: 9px;
+						height: 7px;
+						background:url(../img/bg.png) no-repeat;
+						background-position: -141px -308px;
+					}
+					.ls{
+						width: 65px;
+						text-align: center;
+						position: relative;
+						&:hover {
+							.sevice{
+								display:block;
+							}
+							.arrow{
+								background-position: -141px -315px;
+							}
+						}
+					}
+					.sevice{
+						width: 85px;
+						background-color: white;
+						position: absolute;
+						top: 25px;
+						left: 0px;
+						display: none;
+						z-index: 2;
+						a{
+							padding-left: 3px;
+						}
+						li{
+							&:hover{
+							a{
+								color: $hoverColor;
+							}
+							}
+						}
+						
+					}
+
+				}
+		}
+}
+/************************wr*********************************/
+.wr{
+	width: 1000px;
+	height: 45px;
+	margin:30px auto;
+}
+/************************login*********************************/
+@mixin display($x: 18px,$y: 18px,$z :-114px,$h :-25px){
+			display: block;
+			width: $x;
+			height: $y;
+			background: url(../img/login_btn.gif) no-repeat;
+			background-position:$z $h;
+		}
+
+.login{
+	width: 1000px;
+	height: 427px;
+	margin: 0 auto;
+	margin-bottom: 70px;
+	border:5px solid #efefef;
+	.left{
+		float: left;
+	}
+	.right{
+		margin-left: 20px;
+		width: 345px;
+		margin-top: 33px;
+		padding-left: 35px;
+		background: url(../img/line.gif) no-repeat left top;
+		float: left;
+		span{
+			padding-top: 5px;
+			color: #999;
+			font-size: 14px;
+			padding-top: 20px;
+		}
+		.r1{
+			width: 280px;
+			border: 1px solid #ccc;
+			margin-bottom: 25px;
+			i{
+				float: right;
+				@include display;
+				margin-top: 5px;
+			}
+		}
+		.r2{
+			width: 280px;
+			border: 1px solid #ccc;
+			i{
+				float: right;
+				@include display($z:-145px,$h:-25px);
+				margin-top: 5px;
+			}
+		}
+		input{
+			    height: 24px;
+			    line-height: 24px;
+			    border: 1px #ccc solid;
+			    font-family: arial, "宋体";
+			    font-size: 14px;
+			    padding: 4px 10px 4px 5px;
+			    width: 243px;
+			    border: none;
+			    outline: none;
+		}
+		.r3{
+			width: 280px;
+			margin-top: 20px;
+			input{
+				width: 12px;
+				height: 12px;
+				vertical-align: middle;
+			}
+			span{
+				font-size: 12px;
+				margin-right: 30px;
+				&:nth-child(3){
+						color:blue;
+						cursor: pointer;
+				};
+			}
+		}
+		.btn{
+			width: 280px;
+			height: 40px;
+			text-align: center;
+			vertical-align: middle;
+			margin-top: 30px;
+			background-color: red;
+			color: white;
+			outline: none;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+
+		}
+		.r4{
+			width: 280px;
+			margin-top: 30px;
+			color: #999;
+			.btn1{
+				margin-left: 10px;
+				width: 100px;
+				height: 30px;
+				a{
+				color:red;
+				}
+			}
+		}
+	}
+}
+
+.footer{
+	width: 1000px;
+	margin:0 auto;
+	margin-top: 50px;
+	.f2{
+		width: 100%;
+		height: 20px;
+		text-align: center;
+		p{
+			line-height: 20px;
+			color: #666;
+		}
+	}
+	.f3{
+		width: 100%;
+		height: 48px;
+		text-align: center;
+		.f31{
+			width: 576px;
+			height: 48px;
+			margin: 10px auto 0;
+			@for $i from 2 through 4 {
+				img:nth-child(#{$i}){
+					margin-top: 5px;
+				}
+			}
+			img{
+				float: left;
+				margin-right: 20px;
+				vertical-align: middle;
+			}
+		}
+	}
+}

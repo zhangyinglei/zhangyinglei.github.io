@@ -1,0 +1,353 @@
+.header {
+  width: 100%;
+  height: 25px;
+  background-color: #F2F2F2;
+}
+
+.header .header1 {
+  width: 1000px;
+  height: 25px;
+  margin: 0 auto;
+}
+
+.header .header1 .headerleft {
+  float: left;
+  width: 539px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.header .header1 .headerleft a {
+  float: left;
+  margin: 4px 12px 0 0;
+  width: 16px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  background: url(../img/bg.png) no-repeat;
+}
+
+.header .header1 .headerleft .zone {
+  background-position: 0 -104px;
+}
+
+.header .header1 .headerleft .wb {
+  background-position: -39px -104px;
+}
+
+.header .header1 .headerleft .wx {
+  background-position: -19px -104px;
+  position: relative;
+}
+
+.header .header1 .headerleft .wx span {
+  position: absolute;
+  top: 22px;
+  left: -28px;
+  display: none;
+  z-index: 2;
+}
+
+.header .header1 .headerleft .wx:hover span {
+  display: block;
+}
+
+.header .header1 .headerright {
+  float: left;
+  width: 461px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.header .header1 .headerright ul li {
+  float: left;
+  padding: 0 10px;
+  color: #666;
+}
+
+.header .header1 .headerright ul li:hover a {
+  color: #e74d4d;
+}
+
+.header .header1 .headerright ul li a {
+  color: #666;
+}
+
+.header .header1 .headerright ul .ls:hover {
+  background-color: white;
+  box-shadow: 0 -5px 15px #ccc;
+}
+
+.header .header1 .headerright ul .ls:hover a {
+  color: #666;
+}
+
+.header .header1 .headerright .client {
+  padding-right: 0;
+  position: relative;
+}
+
+.header .header1 .headerright .arrow {
+  position: absolute;
+  top: 4px;
+  left: 53px;
+  width: 9px;
+  height: 7px;
+  background: url(../img/bg.png) no-repeat;
+  background-position: -141px -308px;
+}
+
+.header .header1 .headerright .ls {
+  width: 65px;
+  text-align: center;
+  position: relative;
+}
+
+.header .header1 .headerright .ls:hover .sevice {
+  display: block;
+}
+
+.header .header1 .headerright .ls:hover .arrow {
+  background-position: -141px -315px;
+}
+
+.header .header1 .headerright .sevice {
+  width: 85px;
+  background-color: white;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  display: none;
+  z-index: 2;
+}
+
+.header .header1 .headerright .sevice a {
+  padding-left: 3px;
+}
+
+.header .header1 .headerright .sevice li:hover a {
+  color: #e74d4d;
+}
+
+/************************wr*********************************/
+.wr {
+  width: 1000px;
+  height: 45px;
+  margin: 30px auto;
+}
+
+.wr .logo {
+  width: 400px;
+  height: 100%;
+  float: left;
+}
+
+.wr .right {
+  float: left;
+}
+
+.wr .right ul {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.wr .right ul li {
+  float: left;
+  font-weight: 700;
+  line-height: 28px;
+  padding-left: 12px;
+  position: relative;
+  width: 146px;
+  background-color: #cccccc;
+  color: white;
+}
+
+.wr .right ul li span {
+  background: url("../img/s.gif") no-repeat 0 -66px;
+  height: 28px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23px;
+}
+
+.wr .right ul li:nth-child(1) {
+  background-color: #da2b28;
+}
+
+.wr .right ul li:nth-child(1) span {
+  background: url("../img/s.gif") no-repeat 0 -33px;
+}
+
+/************************content*********************************/
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.content .top {
+  height: 22px;
+  text-align: center;
+}
+
+.content .top ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+.content .top ul li:nth-child(1) {
+  background-color: #f3b083;
+  padding: 0 8px;
+  line-height: 22px;
+}
+
+.content .top ul li:nth-child(2) {
+  line-height: 22px;
+  color: #878787;
+}
+
+.content .info {
+  margin-top: 30px;
+  height: 36px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content .info li {
+  float: left;
+  color: #878787;
+  font-size: 14px;
+}
+
+.content .checked {
+  width: 46px;
+}
+
+.content .product {
+  width: 303px;
+  padding-left: 90px;
+}
+
+.content .intro {
+  width: 160px;
+}
+
+.content .price {
+  width: 100px;
+}
+
+.content .amount {
+  width: 100px;
+}
+
+.content .cz {
+  width: 100px;
+}
+
+.content .total {
+  width: 100px;
+}
+
+.content .market-content {
+  border-bottom: 1px solid #ccc;
+  float: left;
+  width: 1000px;
+  margin-top: 30px;
+}
+
+.content .market-content li {
+  color: #666;
+  float: left;
+  text-align: center;
+}
+
+.content .market-content li dt {
+  float: left;
+}
+
+.content .market-content li dd {
+  padding-top: 20px;
+}
+
+.content .market-content .checked {
+  padding-top: 20px;
+}
+
+.content .market-content .intro {
+  padding-top: 20px;
+}
+
+.content .market-content .price {
+  padding-top: 20px;
+}
+
+.content .market-content .amount {
+  padding-top: 20px;
+}
+
+.content .market-content .amount input {
+  width: 30px;
+  height: 20px;
+  text-align: center;
+}
+
+.content .market-content .cz {
+  padding-top: 20px;
+}
+
+.content .market-content .total {
+  padding-top: 20px;
+}
+
+.content .cal {
+  width: 100%;
+}
+
+.content .cal .left {
+  float: left;
+  width: 500px;
+}
+
+.content .cal .left div {
+  float: left;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.content .cal .left .select {
+  width: 60px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.content .cal .right {
+  float: left;
+  width: 500px;
+}
+
+.content .cal .right li {
+  margin-top: 30px;
+  float: left;
+  margin-left: 20px;
+}
+
+.content .cal .right li span {
+  color: red;
+  font-size: 18px;
+}
+
+.content .cal .right .finish {
+  margin-top: 15px;
+  width: 160px;
+  height: 42px;
+  border: none;
+  background: url(../img/loginBtn.gif) no-repeat 0 -948px;
+}
+
+.content .cal .right .finish.active {
+  margin-top: 15px;
+  width: 160px;
+  height: 42px;
+  border: none;
+  background: url(../img/loginBtn.gif) no-repeat 0 -429px;
+}
